@@ -1,0 +1,75 @@
+{
+    "_id" : ObjectId("631ca78a4c69b66da5504362"),
+    "email" : "aa@mail.com",
+    "password" : "a1",
+    "placeName" : "Olimp sportski centar",
+    "placeCity" : "Beograd",
+    "placeSports" : [
+        {
+            "sportName" : "tennis",
+            "numSlots" : NumberInt(3)
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("631ca7d74c69b66da5504366"),
+    "email" : "bb@mail.com",
+    "password" : "a1",
+    "placeName" : "Balon Enfild",
+    "placeCity" : "Beograd",
+    "placeSports" : [
+        {
+            "sportName" : "football 5x5",
+            "numSlots" : NumberInt(1)
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("631ca8454c69b66da550436a"),
+    "email" : "cc@mail.com",
+    "password" : "a1",
+    "placeName" : "Omladinski stadion",
+    "placeCity" : "Beograd",
+    "placeSports" : [
+        {
+            "sportName" : "football 5x5",
+            "numSlots" : NumberInt(1)
+        },
+        {
+            "sportName" : "football 11x11",
+            "numSlots" : NumberInt(1)
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("632dd8db9c6533c71bcddb10"),
+    "email" : "dd@mail.com",
+    "password" : "a1",
+    "placeName" : "Balon Trudbenik",
+    "placeCity" : "Beograd",
+    "placeSports" : [
+        {
+            "sportName" : "basketball 5x5",
+            "numSlots" : NumberInt(1)
+        },
+        {
+            "sportName" : "football 5x5",
+            "numSlots" : NumberInt(3)
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("633210041e16f2c3ea0a7b93"),
+    "email" : "nn",
+    "password" : "a1",
+    "placeName" : "a",
+    "placeCity" : "a",
+    "placeSports" : [
+
+    ],
+    "__v" : NumberInt(0)
+}

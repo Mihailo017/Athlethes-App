@@ -1,0 +1,1048 @@
+{
+    "_id" : ObjectId("632f8e04264b02b553623761"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-24T23:08:47.943Z",
+    "time" : "9",
+    "sport" : "football 5x5",
+    "t1" : [
+        {
+            "player" : "a@mail.com"
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        }
+    ],
+    "t2" : [
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("632fa69d264b02b553623fa0"),
+    "place" : "Omladinski stadion",
+    "date" : "2022-09-29",
+    "time" : "15",
+    "sport" : "football 5x5",
+    "t1" : [
+        {
+            "player" : "a@mail.com",
+            "position" : "glk"
+        },
+        {
+            "player" : "",
+            "position" : "def"
+        },
+        {
+            "player" : "",
+            "position" : "mid"
+        },
+        {
+            "player" : "",
+            "position" : "mid"
+        },
+        {
+            "player" : "",
+            "position" : "att"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "glk"
+        },
+        {
+            "player" : "",
+            "position" : "def"
+        },
+        {
+            "player" : "",
+            "position" : "mid"
+        },
+        {
+            "player" : "",
+            "position" : "mid"
+        },
+        {
+            "player" : "",
+            "position" : "att"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("632fa71b264b02b553623fbd"),
+    "place" : "Balon Enfild",
+    "date" : "2022-09-30",
+    "time" : "15",
+    "sport" : "football 5x5",
+    "t1" : [
+        {
+            "player" : "a@mail.com",
+            "position" : "glk"
+        },
+        {
+            "player" : "",
+            "position" : "def"
+        },
+        {
+            "player" : "",
+            "position" : "mid"
+        },
+        {
+            "player" : "",
+            "position" : "mid"
+        },
+        {
+            "player" : "",
+            "position" : "att"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "glk"
+        },
+        {
+            "player" : "",
+            "position" : "def"
+        },
+        {
+            "player" : "",
+            "position" : "mid"
+        },
+        {
+            "player" : "",
+            "position" : "mid"
+        },
+        {
+            "player" : "",
+            "position" : "att"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("633024404bc6c0174f105310"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-22T00:00:00.000Z",
+    "time" : "9",
+    "sport" : "",
+    "ground" : NumberInt(1),
+    "t1" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("633024404bc6c0174f105312"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-22T00:00:00.000Z",
+    "time" : "10",
+    "sport" : "",
+    "ground" : NumberInt(1),
+    "t1" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("633024404bc6c0174f105314"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-22T00:00:00.000Z",
+    "time" : "11",
+    "sport" : "",
+    "ground" : NumberInt(1),
+    "t1" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("633024404bc6c0174f105316"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-22T00:00:00.000Z",
+    "time" : "12",
+    "sport" : "",
+    "ground" : NumberInt(1),
+    "t1" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("633024404bc6c0174f105318"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-23T00:00:00.000Z",
+    "time" : "9",
+    "sport" : "",
+    "ground" : NumberInt(1),
+    "t1" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("633024404bc6c0174f10531a"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-23T00:00:00.000Z",
+    "time" : "10",
+    "sport" : "",
+    "ground" : NumberInt(1),
+    "t1" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("633024404bc6c0174f10531c"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-24T00:00:00.000Z",
+    "time" : "9",
+    "sport" : "",
+    "ground" : NumberInt(1),
+    "t1" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("63302fdf8c9a78fa7681d5fb"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-30T00:00:00.000Z",
+    "time" : "9",
+    "sport" : "",
+    "ground" : NumberInt(1),
+    "t1" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("63302fdf8c9a78fa7681d5fd"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-30T00:00:00.000Z",
+    "time" : "10",
+    "sport" : "",
+    "ground" : NumberInt(1),
+    "t1" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("63302fdf8c9a78fa7681d5ff"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-30T00:00:00.000Z",
+    "time" : "11",
+    "sport" : "",
+    "ground" : NumberInt(1),
+    "t1" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("63302fdf8c9a78fa7681d601"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-30T00:00:00.000Z",
+    "time" : "12",
+    "sport" : "",
+    "ground" : NumberInt(1),
+    "t1" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("63302fdf8c9a78fa7681d603"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-10-01T00:00:00.000Z",
+    "time" : "9",
+    "sport" : "",
+    "ground" : NumberInt(1),
+    "t1" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("63302fdf8c9a78fa7681d605"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-10-01T00:00:00.000Z",
+    "time" : "10",
+    "sport" : "",
+    "ground" : NumberInt(1),
+    "t1" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("63302fdf8c9a78fa7681d607"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-10-02T00:00:00.000Z",
+    "time" : "9",
+    "sport" : "",
+    "ground" : NumberInt(1),
+    "t1" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "p1"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("633066d39fea0ca96dc59820"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-25T14:33:52.726Z",
+    "time" : "9",
+    "sport" : "football 5x5",
+    "t1" : [
+        {
+            "player" : "a@mail.com"
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        }
+    ],
+    "t2" : [
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("633067a49fea0ca96dc59bca"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-25T14:37:21.403Z",
+    "time" : "9",
+    "sport" : "football 5x5",
+    "t1" : [
+        {
+            "player" : "a@mail.com"
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        }
+    ],
+    "t2" : [
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("63306a259fea0ca96dc59cb6"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-25T14:41:12.431Z",
+    "time" : "9",
+    "sport" : "football 5x5",
+    "t1" : [
+        {
+            "player" : "a@mail.com"
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        }
+    ],
+    "t2" : [
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("6330700a9fea0ca96dc59f9c"),
+    "place" : "Balon Enfild",
+    "date" : "2022-10-07",
+    "time" : "15",
+    "sport" : "football 5x5",
+    "t1" : [
+        {
+            "player" : "a@mail.com",
+            "position" : "glk"
+        },
+        {
+            "player" : "",
+            "position" : "def"
+        },
+        {
+            "player" : "",
+            "position" : "mid"
+        },
+        {
+            "player" : "",
+            "position" : "mid"
+        },
+        {
+            "player" : "",
+            "position" : "att"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "glk"
+        },
+        {
+            "player" : "",
+            "position" : "def"
+        },
+        {
+            "player" : "",
+            "position" : "mid"
+        },
+        {
+            "player" : "",
+            "position" : "mid"
+        },
+        {
+            "player" : "",
+            "position" : "att"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("633075019fea0ca96dc5a01a"),
+    "place" : "Omladinski stadion",
+    "date" : "2022-09-27",
+    "time" : "15",
+    "sport" : "football 11x11",
+    "t1" : [
+        {
+            "player" : "a@mail.com",
+            "position" : {
+                "posName" : "GK"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "DL"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "DC"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "DR"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "DMF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "CMF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "AMF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "WG"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "ST"
+            }
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "GK"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "DL"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "DC"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "DR"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "DMF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "CMF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "AMF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "WG"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "ST"
+            }
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("633075b69fea0ca96dc5a024"),
+    "place" : "Balon Trudbenik",
+    "date" : "2022-09-21",
+    "time" : "15",
+    "sport" : "basketball 5x5",
+    "t1" : [
+        {
+            "player" : "a@mail.com",
+            "position" : {
+                "posName" : "PG"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "SG"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "SF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "PF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "C"
+            }
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "PG"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "SG"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "SF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "PF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "C"
+            }
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("63307c319fea0ca96dc5a1cd"),
+    "place" : "Balon Trudbenik",
+    "date" : "2022-09-07",
+    "time" : "11",
+    "sport" : "basketball 5x5",
+    "t1" : [
+        {
+            "player" : "a@mail.com",
+            "position" : {
+                "posName" : "PG"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "SG"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "SF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "PF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "C"
+            }
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "PG"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "SG"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "SF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "PF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "C"
+            }
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("63307c369fea0ca96dc5a1d0"),
+    "place" : "Balon Trudbenik",
+    "date" : "2022-10-07",
+    "time" : "11",
+    "sport" : "basketball 5x5",
+    "t1" : [
+        {
+            "player" : "a@mail.com",
+            "position" : {
+                "posName" : "PG"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "SG"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "SF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "PF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "C"
+            }
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "PG"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "SG"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "SF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "PF"
+            }
+        },
+        {
+            "player" : "",
+            "position" : {
+                "posName" : "C"
+            }
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("63307c3b9fea0ca96dc5a1d3"),
+    "place" : "Omladinski stadion",
+    "date" : "2022-10-07",
+    "time" : "11",
+    "sport" : "football 5x5",
+    "t1" : [
+        {
+            "player" : "a@mail.com",
+            "position" : "glk"
+        },
+        {
+            "player" : "",
+            "position" : "def"
+        },
+        {
+            "player" : "",
+            "position" : "mid"
+        },
+        {
+            "player" : "",
+            "position" : "mid"
+        },
+        {
+            "player" : "",
+            "position" : "att"
+        }
+    ],
+    "t2" : [
+        {
+            "player" : "",
+            "position" : "glk"
+        },
+        {
+            "player" : "",
+            "position" : "def"
+        },
+        {
+            "player" : "",
+            "position" : "mid"
+        },
+        {
+            "player" : "",
+            "position" : "mid"
+        },
+        {
+            "player" : "",
+            "position" : "att"
+        }
+    ],
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("6331e8bd1e16f2c3ea0a789f"),
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-26T18:00:26.062Z",
+    "time" : "9",
+    "sport" : "football 5x5",
+    "t1" : [
+        {
+            "player" : "a@mail.com"
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        }
+    ],
+    "t2" : [
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        },
+        {
+            "player" : ""
+        }
+    ],
+    "__v" : NumberInt(0)
+}

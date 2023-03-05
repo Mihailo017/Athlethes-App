@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Uspesno ste se prijavili na termin!</h1>
+
+<div mat-dialog-content *ngIf="timeslotFull">
+    <h1 mat-dialog-title>Termin je popunjen pa nije moguce dodatno pozivanje prijatelja</h1>
+</div>
+
+<div mat-dialog-content *ngIf="!timeslotFull">
+    <h3 mat-dialog-title>Pozovite vase prijatelje da vam se pridruze za ovaj termin</h3>
+    <mat-form-field appearance="fill">
+        <mat-label>Pozovi prijatelje</mat-label>
+        <mat-select multiple placeholder="Prijatelji" name="friends" [(ngModel)]='data.invitedFriends'>
+            <mat-option *ngFor="let f of data.allFriends" [value]="f">
+                {{f.firstName}} {{f.lastName}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+    <button class="dugme" mat-button (click)="onNoClick()">Izlaz</button>
+    <button class="dugme" *ngIf="!timeslotFull" mat-button [mat-dialog-close]="data.invitedFriends" cdkFocusInitial
+        color="accent">Pozovi</button>
+</div>

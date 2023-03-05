@@ -1,0 +1,142 @@
+<mat-card *ngIf="firstLogin">
+    <div class="mat-h1">Pomozite nam da upotpunimo vas profil</div>
+    <mat-stepper>
+        <mat-step label="Sportovi">
+            <form>
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Omiljeni sportovi</mat-label>
+                        <mat-select name="chosenSports" multiple [(ngModel)]='chosenSports'>
+                            <mat-option *ngFor="let s of allSports" [value]="s">{{s.sportName}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <button mat-button matStepperPrevious>Prethodni</button>
+                    <button mat-button matStepperNext>Sledeci</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step label="Sportske ustanove">
+            <form>
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Omiljeni sportski objekti</mat-label>
+                        <mat-select name="chosenPlaces" multiple [(ngModel)]='chosenPlaces'>
+                            <mat-option *ngFor="let p of placesForPlayerCity" [value]="p">{{p.placeName}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <button mat-button matStepperPrevious>Prethodni</button>
+                    <button mat-button matStepperNext>Sledeci</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step label="Termini">
+            <form>
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Preferirani termini</mat-label>
+                        <mat-select name="chosenTimeslots" multiple [(ngModel)]='chosenTimeslots'>
+                            <mat-option value="prepodne">9h - 11h Prepodnevni termini</mat-option>
+                            <mat-option value="poslepodne">12h - 14h Poslepodnevni termini</mat-option>
+                            <mat-option value="predvece">15h - 17h Predvecernji termini</mat-option>
+                            <mat-option value="uvece">18h - 20h Vecernji termini</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <button mat-button matStepperPrevious>Prethodni</button>
+                    <button mat-button matStepperNext>Sledeci</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step label="Profilna fotografija">
+            <form>
+                <div>
+                    <mat-label>Dodajte vasu profilnu fotografiju</mat-label>
+                </div>
+                <div>
+                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="photo"></mat-icon>
+                </div>
+                <div>
+                    <button mat-button matStepperPrevious>Prethodni</button>
+                    <button mat-button (click)="confirmData()">Potvrda</button>
+                </div>
+            </form>
+        </mat-step>
+    </mat-stepper>
+</mat-card>
+
+<div>
+    <img mat-card-image src="../../assets/profile.jpg">
+    <!-- <h1>{{loggedIn.firstName}} {{loggedIn.lastName}}</h1> -->
+    <h1>Bojan Markovic</h1>
+</div>
+
+<nav mat-tab-nav-bar>
+    <a mat-tab-link [href]="link" *ngFor="let link of links; let i=index" (click)="activeLink = link" [active]="">
+        {{linkNames[i]}} </a>
+</nav>
+<br>
+
+<div>
+    <mat-accordion multi="true">
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <div class="mat-h1">Moji termini</div>
+            </mat-expansion-panel-header>
+            <table id="tabela">
+                <th>#</th>
+                <th>Sport</th>
+                <th>Sportski objekat</th>
+                <th>Datum</th>
+                <th>Vreme</th>
+                <th>Status</th>
+                <tr *ngFor="let t of myTimeslots; let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{t.sport}}</td>
+                    <td>{{t.place}}</td>
+                    <td>{{t.date}}</td>
+                    <td>{{t.time}}</td>
+                    <td>{{t.status}}</td>
+                </tr>
+            </table>
+        </mat-expansion-panel>
+        <br>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <div class="mat-h1">Moji turniri</div>
+            </mat-expansion-panel-header>
+            <table id="tabela">
+                <th>#</th>
+                <th>Sport</th>
+                <th>Sportski objekat</th>
+                <th>Datum</th>
+                <th>Plasman</th>
+                <th>Status</th>
+                <tr *ngFor="let t of myTournaments; let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{t.sport}}</td>
+                    <td>{{t.place}}</td>
+                    <td>{{t.date}}</td>
+                    <td>{{t.standings}}</td>
+                    <td>{{t.status}}</td>
+                </tr>
+            </table>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+
+
+
+
+<!-- <table>
+    <tr><a routerLink="/playNow">Play Now</a></tr>
+    <tr><a>Practice</a></tr>
+    <tr><a routerLink="/teamvsteam">Team vs team</a></tr>
+    <tr><a>Tournaments</a></tr>
+    <tr><a>Statistics</a></tr>
+    <tr><a routerLink="/community">Community</a></tr>
+</table> -->

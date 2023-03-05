@@ -1,0 +1,32 @@
+<mat-card>
+    <div class="mat-h1">Prijava korisnika</div>
+    <form>
+        <table>
+            <tr>
+                <mat-form-field>
+                    <td>
+                        <input matInput placeholder="Adresa elektronske poste" type="text" name="email"
+                            [(ngModel)]='email'>
+                    </td>
+                </mat-form-field>
+            </tr>
+            <tr>
+                <mat-form-field>
+                    <td>
+                        <input matInput placeholder="Lozinka" type="password" name="password" [(ngModel)]='password'>
+                    </td>
+                </mat-form-field>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="dugme" mat-raised-button color="accent" (click)="signIn()">Sign in</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="dugme" mat-raised-button color="accent" routerLink="register">Registracija</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</mat-card>

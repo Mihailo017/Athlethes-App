@@ -1,0 +1,90 @@
+<div>
+    <img id="profile" src="../../assets/trudbenik.jpg">
+    <!-- <h1>{{loggedIn.firstName}} {{loggedIn.lastName}}</h1> -->
+    <h1>Balon Trudbenik</h1>
+</div>
+
+<nav mat-tab-nav-bar>
+    <a mat-tab-link [href]="link" *ngFor="let link of links; let i=index" (click)="activeLink = link"
+        [active]="activeLink == link">
+        {{linkNames[i]}} </a>
+</nav>
+
+<!-- <div>
+    <form>
+        <table>
+            <tr>
+                <td>Izaberite sport koji zelite da igrate:</td>
+                <td>
+                    <select name="sport" [(ngModel)]='sport'>
+                        <option *ngFor="let s of mySports" value="{{s.sportName}}" (click)="chooseSport()">
+                            {{s.sportName}}</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Izaberite broj timova:
+                </td>
+                <td>
+                    <input type="number" name="numTeams" [(ngModel)]='numTeams'>
+                </td>
+            </tr>
+            <tr>
+                <td>Izaberite datum pocetka:</td>
+                <td>
+                    <input type="date" name="date" [(ngModel)]='date'>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button (click)="makeTournament()">Napravi turnir</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div> -->
+
+<div>
+    <mat-card>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <mat-form-field>
+                            <mat-label>Sportovi</mat-label>
+                            <mat-select name="chosenSport" [(ngModel)]='chosenSport'>
+                                <mat-option *ngFor="let s of mySports" [value]="s">{{s.sportName}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field>
+                            <input required matInput placeholder="Broj timova" type="number" name="numTeams"
+                                [(ngModel)]='numTeams'>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field>
+                            <input required matInput placeholder="Datum pocetka" type="date" name="date"
+                                [(ngModel)]='date'>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button class="dugme" mat-raised-button (click)="makeTournament()">
+                            Napravi turnir
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </mat-card>
+</div>

@@ -1,0 +1,54 @@
+<div>
+    <img id="profile" src="../../assets/profile.jpg">
+    <!-- <h1>{{loggedIn.firstName}} {{loggedIn.lastName}}</h1> -->
+    <h1>Bojan Markovic</h1>
+</div>
+
+<nav mat-tab-nav-bar>
+    <a mat-tab-link [href]="link" *ngFor="let link of links; let i=index" (click)="activeLink = link"
+        [active]="activeLink == link">
+        {{linkNames[i]}} </a>
+</nav>
+
+<div>
+    <table>
+        <tr>
+            <mat-card>
+                <div class="mat-h3">Turnir Basket</div>
+                <img mat-card-image src="../../assets/kosarka.jpg">
+                <table id="tabela">
+                    <th>Mesto</th>
+                    <th>Datum pocetka</th>
+                    <tr>
+                        <td>Olimp sportski centar</td>
+                        <td>12/10/2022</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <button class="dugme" mat-button>Prijava</button>
+                        </td>
+                    </tr>
+                </table>
+            </mat-card>
+        </tr>
+        <tr>
+            <mat-card>
+                <div class="mat-h3">Turnir Mali fudbal</div>
+                <img mat-card-image src="../../assets/fudbal.jpg">
+                <table id="tabela">
+                    <th>Mesto</th>
+                    <th>Datum pocetka</th>
+                    <tr>
+                        <td>Balon Trudbenik</td>
+                        <td>12/10/2022</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <button class="dugme" mat-button>Prijava</button>
+                        </td>
+                    </tr>
+                </table>
+            </mat-card>
+        </tr>
+    </table>
+</div>

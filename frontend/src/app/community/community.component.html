@@ -1,0 +1,122 @@
+<div>
+    <img id="profile" src="../../assets/profile.jpg">
+    <!-- <h1>{{loggedIn.firstName}} {{loggedIn.lastName}}</h1> -->
+    <h1>Bojan Markovic</h1>
+</div>
+
+<nav mat-tab-nav-bar>
+    <a mat-tab-link [href]="link" *ngFor="let link of links; let i=index" (click)="activeLink = link"
+        [active]="activeLink == link">
+        {{linkNames[i]}} </a>
+</nav>
+<br>
+
+<div>
+    <mat-accordion multi="true">
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <div class="mat-h1">Pretraga sportista</div>
+            </mat-expansion-panel-header>
+            <div>
+                <form>
+                    <table id="tabela">
+                        <tr>
+                            <td colspan="3">
+                                <mat-form-field>
+                                    <input required matInput placeholder="Ime Prezime" type="text" name="playerSearch"
+                                        [(ngModel)]='playerSearch'>
+                                </mat-form-field>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <button class="dugme" mat-button (click)="searchPlayer()">Pretraga</button>
+                            </td>
+                        </tr>
+                        <br>
+                        <tr *ngFor="let p of players">
+                            <td>
+                                <img id="photo" src="../../assets/profile3.webp">
+                            </td>
+                            <td>{{p.firstName}} {{p.lastName}}</td>
+                            <td><button class="dugme" mat-raised-button (click)="sendFriendRequest(p)">Posalji
+                                    zahtev</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </mat-expansion-panel>
+        <br>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <div class="mat-h1">Moji prijatelji</div>
+            </mat-expansion-panel-header>
+            <table id="tabela">
+                <tr *ngFor="let f of myFriends; let i=index">
+                    <td>{{f.firstName}} {{f.lastName}}</td>
+                    <td><button class="dugme" mat-raised-button (click)="sendMessage(f)">Posalji
+                            poruku</button></td>
+                </tr>
+            </table>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
+
+<!-- <div>
+    <form>
+        <table>
+            <tr>
+                <td>Pretraga sportista:</td>
+                <td>
+                    <input type="text" name="playerSearch" [(ngModel)]='playerSearch'>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button (click)="searchPlayer()">Pretraga</button>
+                </td>
+            </tr>
+            <!-- <tr>
+                <td>
+                    <select name="" [(ngModel)]='chosenPlayer'>
+                        <option *ngFor="let p of players" value="{{p.email}}">{{p.firstName}}    {{p.lastName}}</option>
+                    </select>
+                </td>
+            </tr> ->
+        </table>
+    </form>
+</div> -->
+
+<!-- <div>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <select name="players" [(ngModel)]='chosenPlayer'>
+                        <option *ngFor="let p of players" value="{{p.email}}">{{p.firstName}} {{p.lastName}}</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button (click)="sendFriendRequest()">Posalji zahtev</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div> -->
+
+<div>
+    <form>
+        <table>
+            <tr *ngFor="let r of myRequests">
+                <td>
+                    {{r.reqSender}}
+                </td>
+                <td>
+                    <button (click)="accept(r)">Prihvati zahtev</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

@@ -1,0 +1,20 @@
+{
+    "_id" : ObjectId("632f8e04264b02b553623763"),
+    "sport" : "football 5x5",
+    "place" : "Olimp sportski centar",
+    "date" : "2022-09-24T23:08:47.943Z",
+    "time" : "9",
+    "invSender" : "a@mail.com",
+    "invReceiver" : "b@mail.com",
+    "__v" : NumberInt(0)
+}
+{
+    "_id" : ObjectId("632fa69d264b02b553623fa2"),
+    "sport" : "football 5x5",
+    "place" : "Omladinski stadion",
+    "date" : "2022-09-29",
+    "time" : "15",
+    "invSender" : "a@mail.com",
+    "invReceiver" : "c@mail.com",
+    "__v" : NumberInt(0)
+}

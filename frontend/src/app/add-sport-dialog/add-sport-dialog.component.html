@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>Dodavanje spotova</h1>
+<div mat-dialog-content>
+    <mat-form-field appearance="fill">
+        <mat-label>Sportovi</mat-label>
+        <mat-select placeholder="Sportovi" name="sportName" [(ngModel)]='data.newSportInfo.sportName'>
+            <mat-option *ngFor="let s of data.allSports" value="{{s.sportName}}">
+                {{s.sportName}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <!-- <mat-form-field>
+        <td>
+            <input required matInput placeholder="Broj raspolozivih terena" type="number" name="numSlots"
+                [(ngModel)]='data.newSportInfo.numSlots'>
+        </td>
+    </mat-form-field> -->
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Izlaz</button>
+    <button mat-button [mat-dialog-close]="data.newSportInfo" cdkFocusInitial color="accent">Dodaj</button>
+</div>

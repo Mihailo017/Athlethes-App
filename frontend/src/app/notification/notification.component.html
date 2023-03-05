@@ -1,0 +1,266 @@
+<div>
+    <img id="profile" src="../../assets/profile.jpg">
+    <!-- <h1>{{loggedIn.firstName}} {{loggedIn.lastName}}</h1> -->
+    <h1>Bojan Markovic</h1>
+</div>
+
+<nav mat-tab-nav-bar>
+    <a mat-tab-link [href]="link" *ngFor="let link of links; let i=index" (click)="activeLink = link"
+        [active]="activeLink == link">
+        {{linkNames[i]}} </a>
+</nav>
+
+
+<div>
+    <table>
+        <tr>
+            <mat-card>
+                <div class="mat-h1">Termin Mali fudbal</div>
+                <img mat-card-image src="../../assets/fudbal.jpg">
+                <table id="tabela">
+                    <th>Mesto</th>
+                    <th>Datum</th>
+                    <th>Vreme</th>
+                    <tr>
+                        <td>Balon enfild</td>
+                        <td>7/10/2022</td>
+                        <td>10h</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="mat-h3">Obavestavamo vas da je prijavljen potreban broj igraca za ovaj termin!
+                                Vidimo se!</div>
+                        </td>
+                    </tr>
+                </table>
+            </mat-card>
+        </tr>
+        <tr>
+            <mat-card>
+                <div class="mat-h1">Turnir Basket</div>
+                <img mat-card-image src="../../assets/kosarka.jpg">
+                <table id="tabela">
+                    <th>Mesto</th>
+                    <th>Datum pocetka</th>
+                    <tr>
+                        <td>Olimp sportski centar</td>
+                        <td>12/10/2022</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="mat-h3">Obavestavamo vas da je prijavljen potreban broj ekipa za
+                                ovaj turnir! Vas prvi mec na turniru je 12/10/2022 u 11h
+                                Vidimo se!</div>
+                        </td>
+                    </tr>
+                </table>
+            </mat-card>
+        </tr>
+
+        <tr>
+            <mat-card>
+                <div class="mat-h1">Turnir tenis</div>
+                <img mat-card-image src="../../assets/tenis.jpg">
+                <table id="tabela">
+                    <th>Mesto</th>
+                    <th>Datum pocetka</th>
+                    <tr>
+                        <td>Olimp sportski centar</td>
+                        <td>25/9/2022</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="mat-h3" style="color: red">Obavestavamo vas da nije prijavljen potreban broj
+                                ekipa za
+                                ovaj turnir pre njegovog pocetka! Turnir je otkazan.</div>
+                        </td>
+                    </tr>
+                </table>
+            </mat-card>
+        </tr>
+        <tr>
+            <mat-card>
+                <div class="mat-h1">Termin Mali fudbal</div>
+                <img mat-card-image src="../../assets/fudbal.jpg">
+                <table id="tabela">
+                    <th>Mesto</th>
+                    <th>Datum</th>
+                    <th>Vreme</th>
+                    <tr>
+                        <td>Balon Brazil</td>
+                        <td>30/9/2022</td>
+                        <td>14h</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="mat-h3">Ostalo je jos dva dana do termina! Potrebno je jos tri igraca. Prijavite
+                                se i pozovite vase prijatelje!</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <button class="dugme" mat-button>Prijava</button>
+                        </td>
+                    </tr>
+                </table>
+            </mat-card>
+        </tr>
+        <tr>
+            <mat-card>
+                <div class="mat-h1">Turnir tenis</div>
+                <img mat-card-image src="../../assets/tenis.jpg">
+                <table id="tabela">
+                    <th>Mesto</th>
+                    <th>Datum</th>
+                    <tr>
+                        <td>Teniski klub MONOLITH</td>
+                        <td>28/9/2022</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="mat-h3">Ostao je jos jedan dan do turnira! Potrebno je jos dva igraca.
+                                Prijavite
+                                se i pozovite vase prijatelje!</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <button class="dugme" mat-button>Prijava</button>
+                        </td>
+                    </tr>
+                </table>
+            </mat-card>
+        </tr>
+        <tr>
+            <mat-card>
+                <div class="mat-h1">Marko Jovanovic vam salje poruku</div>
+                <div>
+                    <mat-card>
+                        Ee jesi igrao nekad tenis u Olimpu?
+                    </mat-card>
+                </div>
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <mat-form-field>
+                                <input matInput placeholder="Odgovori" type="text">
+                            </mat-form-field>
+                        </td>
+                        <td>
+                            <button class="dugme" mat-icon-button>
+                                <mat-icon>send</mat-icon>
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </mat-card>
+        </tr>
+        <tr>
+            <mat-card>
+                <div class="mat-h1">Marko Jovanovic vam je poslao zahtev za prijateljstvo</div>
+
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <button class="dugme" mat-button>Odbij
+                            </button>
+                        </td>
+                        <td>
+                            <div>
+                                <img id='request' style="margin: auto" mat-card-image src="../../assets/profile2.jpg">
+                            </div>
+                        </td>
+                        <td>
+                            <button class="dugme" mat-raised-button>Prihvati
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </mat-card>
+        </tr>
+        <tr>
+            <mat-card>
+                <div class="mat-h1">Termin Basket</div>
+                <img mat-card-image src="../../assets/kosarka.jpg">
+                <table id="tabela">
+                    <th>Mesto</th>
+                    <th>Datum</th>
+                    <th>Vreme</th>
+                    <tr>
+                        <td>Kosarkaska sala Dinamik Dorcol</td>
+                        <td>24/9/2022</td>
+                        <td>18h</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="mat-h3" style="color: red">Obavestavamo vas da nije prijavljen potreban broj
+                                igraca za ovaj termin!
+                                Termin je otkazan</div>
+                        </td>
+                    </tr>
+                </table>
+            </mat-card>
+        </tr>
+        <tr>
+            <mat-card>
+                <div class="mat-h1">Turnir tenis</div>
+                <img mat-card-image src="../../assets/tenis.jpg">
+                <table id="tabela">
+                    <th>Mesto</th>
+                    <th>Datum pocetka</th>
+                    <tr>
+                        <td>Olimp sportski centar</td>
+                        <td>25/9/2022</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="mat-h3">Avram Stojilkovic vas poziva na ovaj turnir.</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="dugme" mat-button>Odbij
+                            </button>
+                        </td>
+                        <td colspan="2">
+                            <button class="dugme" mat-raised-button>Prihvati
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </mat-card>
+        </tr>
+        <tr>
+            <mat-card>
+                <div class="mat-h1">Termin Basket</div>
+                <img mat-card-image src="../../assets/kosarka.jpg">
+                <table id="tabela">
+                    <th>Mesto</th>
+                    <th>Datum</th>
+                    <th>Vreme</th>
+                    <tr>
+                        <td>Kosarkaska sala Dinamik Dorcol</td>
+                        <td>24/9/2022</td>
+                        <td>18h</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <div class="mat-h3">Uros Damjanovic vas poziva na ovaj termin!</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="dugme" mat-button>Odbij
+                            </button>
+                        </td>
+                        <td colspan="2">
+                            <button class="dugme" mat-raised-button>Prihvati
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </mat-card>
+        </tr>
+
+    </table>
+</div>

@@ -1,0 +1,113 @@
+<div>
+    <table>
+        <tr>
+            <td>
+                <button class="dugme" mat-raised-button (click)="goBack()">Nazad
+                </button>
+            </td>
+            <td>
+
+                <h1>Konverzacija sa Marko Jovanovic</h1>
+            </td>
+            <td>
+                <img id="profile" src="../../assets/profile2.jpg">
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<form>
+    <table>
+        <tr>
+            <td>
+                <mat-card>
+                    Ee jesi igrao nekad tenis u Olimpu?
+                </mat-card>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <mat-card>
+                    Kako ti se cini?
+                </mat-card>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <mat-card>
+                    Ako si igrao
+                </mat-card>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <mat-card id="myMess">
+                    Nisam nikad
+                </mat-card>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <mat-card id="myMess">
+                    Imam drugara sto je igrao
+                </mat-card>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <mat-card id="myMess">
+                    Bojan Jovic
+                </mat-card>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <mat-card id="myMess">
+                    Reci cu mu da te doda
+                </mat-card>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <mat-card>
+                    Vazi hvala
+                </mat-card>
+            </td>
+            <td></td>
+        </tr>
+
+    </table>
+</form>
+
+<br>
+
+<mat-card id="send">
+    <form>
+        <table style="width: 100%">
+            <tr>
+                <td>
+                    <mat-form-field>
+                        <input matInput placeholder="Tekst poruke" type="text">
+                    </mat-form-field>
+                </td>
+                <td>
+                    <button class="dugme" mat-icon-button (click)="goBack()">
+                        <mat-icon>send</mat-icon>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</mat-card>

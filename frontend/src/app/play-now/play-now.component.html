@@ -1,0 +1,221 @@
+<div>
+    <img id="profile" src="../../assets/profile.jpg">
+    <!-- <h1>{{loggedIn.firstName}} {{loggedIn.lastName}}</h1> -->
+    <h1>Bojan Markovic</h1>
+</div>
+
+<nav mat-tab-nav-bar>
+    <a mat-tab-link [href]="link" *ngFor="let link of links; let i=index" (click)="activeLink = link"
+        [active]="activeLink == link">
+        {{linkNames[i]}} </a>
+</nav>
+
+<!-- <div>
+    <form>
+        <table>
+            <tr>
+                <td>Izaberite sport koji zelite da igrate:</td>
+                <td>
+                    <select name="sport" [(ngModel)]='sport'>
+                        <option *ngFor="let s of allSports" value="{{s.sportName}}" (click)="chooseSport()">
+                            {{s.sportName}}</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Izaberite mesto:
+                </td>
+                <td>
+                    <select name="place" [(ngModel)]='place'>
+                        <option *ngFor="let p of sportPlaces" value="{{p.placeName}}">{{p.placeName}}</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Izaberite datum:</td>
+                <td>
+                    <input type="date" name="date" [(ngModel)]='date'>
+                </td>
+            </tr>
+            <tr>
+                <td>Izaberite vreme (izmedju 9h i 21h):</td>
+                <td>
+                    <input type="text" name="time" [(ngModel)]='time'>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button (click)="checkAvailability()">Provera dostupnosti</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div> -->
+
+<!-- <div *ngIf="teamChosen">
+    <form>
+        <table>
+            <tr>
+                <td>Pretraga prijatelja:</td>
+                <td>
+                    <input type="text" name="friendSearch" [(ngModel)]='friendSearch'>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button (click)="searchFriend()">Pretraga</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="chosenFriend" [(ngModel)]='chosenFriend'>
+                        <option *ngFor="let f of friends" value="{{f.email}}">{{f.firstName}} {{f.lastName}}</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div *ngIf="chooseTeamAndPositionShow">
+    <form>
+        <table>
+            <th>Position</th>
+            <th>Player</th>
+            <th>Action</th>
+            <tr>Team 1</tr>
+            <tr *ngFor="let p of timeslot.t1">
+                <td>{{p.position}}</td>
+                <td *ngIf="p.player">{{p.player}}</td>
+                <div *ngIf="!(p.player) && !teamChosen">
+                    <td>Available</td>
+                    <td>
+                        <button (click)="chooseTeamAndPosition(p, 1)">Izaberi</button>
+                    </td>
+                </div>
+                <div *ngIf="!(p.player) && teamChosen==1">
+                    <td>Available</td>
+                    <td>
+                        <button (click)="inviteSelectedFriend(p)">Pozovi</button>
+                    </td>
+                </div>
+                <div *ngIf="!(p.player) && teamChosen==2">
+                    <td>Available</td>
+                </div>
+            </tr>
+            <tr>Team 2</tr>
+            <tr *ngFor="let p of timeslot.t2">
+                <td>{{p.position}}</td>
+                <td *ngIf="p.player">{{p.player}}</td>
+                <div *ngIf="!(p.player) && !teamChosen">
+                    <td>Available</td>
+                    <td>
+                        <button (click)="chooseTeamAndPosition(p, 2)">Izaberi</button>
+                    </td>
+                </div>
+                <div *ngIf="!(p.player) && teamChosen==2">
+                    <td>Available</td>
+                    <td>
+                        <button (click)="inviteSelectedFriend(p)">Pozovi</button>
+                    </td>
+                </div>
+                <div *ngIf="!(p.player) && teamChosen==1">
+                    <td>Available</td>
+                </div>
+            </tr>
+            <div *ngIf="teamChosen">
+                <tr>
+                    <button (click)="removeSelfFromTeam()">Izbaci me iz tima</button>
+                </tr>
+            </div>
+            <tr *ngIf="!updatedSlot">
+                <button (click)="reserveSlot()">Prijavi termin</button>
+            </tr>
+            <tr *ngIf="updatedSlot">
+                <button (click)="updateSlot()">Azuriraj termin</button>
+            </tr>
+        </table>
+    </form>
+</div> -->
+
+<!-- <div>
+    <table>
+        <tr *ngFor="let f of feed; let i= index;">
+            <mat-card>
+                <div class="mat-h3">Termin {{f.timeslot.sport}}</div>
+                <img mat-card-image src="../../assets/fudbal.jpg">
+                <table id="tabela">
+                    <th>Mesto</th>
+                    <th>Datum</th>
+                    <th>Vreme</th>
+                    <tr>
+                        <td>{{f.timeslot.place}}</td>
+                        <td>{{f.date}}</td>
+                        <td>{{f.time}}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <button class="dugme" mat-button
+                                (click)="openSignUpTimeslotDialog(f.timeslot, i)">Prijava</button>
+                        </td>
+
+                    </tr>
+                </table>
+            </mat-card>
+        </tr>
+    </table>
+</div> -->
+
+<div>
+    <table>
+        <tr>
+            <mat-card>
+                <div class="mat-h1">Termin Mali fudbal</div>
+                <img mat-card-image src="../../assets/fudbal.jpg">
+                <table id="tabela">
+                    <th>Mesto</th>
+                    <th>Datum</th>
+                    <th>Vreme</th>
+                    <tr>
+                        <td>Balon enfild</td>
+                        <td>7/10/2022</td>
+                        <td>10h</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Uros Damjanovic i jos 2 prijatelja su se vec prijavili na ovaj termin!</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <button class="dugme" mat-button>Prijava</button>
+                        </td>
+                    </tr>
+                </table>
+            </mat-card>
+        </tr>
+        <tr>
+            <mat-card>
+                <div class="mat-h1">Termin Basket</div>
+                <img mat-card-image src="../../assets/kosarka.jpg">
+                <table id="tabela">
+                    <th>Mesto</th>
+                    <th>Datum</th>
+                    <th>Vreme</th>
+                    <tr>
+                        <td>Olimp sportski centar</td>
+                        <td>9/10/2022</td>
+                        <td>11h</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Milos Ivkovic i jos 1 prijatelj su se vec prijavili na ovaj termin!</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <button class="dugme" mat-button>Prijava</button>
+                        </td>
+                    </tr>
+                </table>
+            </mat-card>
+        </tr>
+    </table>
+</div>

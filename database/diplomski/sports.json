@@ -1,0 +1,113 @@
+{
+    "_id" : ObjectId("631c85cd61c5dad34464bc31"),
+    "sportName" : "football 5x5",
+    "numPlayers" : "10",
+    "positions" : [
+        "glk",
+        "def",
+        "mid",
+        "mid",
+        "att"
+    ]
+}
+{
+    "_id" : ObjectId("631c874561c5dad34464bc32"),
+    "sportName" : "basketball 5x5",
+    "numPlayers" : "10",
+    "positions" : [
+        {
+            "posName" : "PG"
+        },
+        {
+            "posName" : "SG"
+        },
+        {
+            "posName" : "SF"
+        },
+        {
+            "posName" : "PF"
+        },
+        {
+            "posName" : "C"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("631c879961c5dad34464bc33"),
+    "sportName" : "basketball 3x3",
+    "numPlayers" : "6",
+    "positions" : [
+        {
+            "posName" : "G"
+        },
+        {
+            "posName" : "F"
+        },
+        {
+            "posName" : "C"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("631c881c61c5dad34464bc34"),
+    "sportName" : "football 11x11",
+    "numPlayers" : "22",
+    "positions" : [
+        {
+            "posName" : "GK"
+        },
+        {
+            "posName" : "DL"
+        },
+        {
+            "posName" : "DC"
+        },
+        {
+            "posName" : "DR"
+        },
+        {
+            "posName" : "DMF"
+        },
+        {
+            "posName" : "CMF"
+        },
+        {
+            "posName" : "AMF"
+        },
+        {
+            "posName" : "WG"
+        },
+        {
+            "posName" : "ST"
+        }
+    ]
+}
+{
+    "_id" : ObjectId("631c884161c5dad34464bc35"),
+    "sportName" : "tennis",
+    "numPlayers" : "2",
+    "positions" : [
+        "p1"
+    ]
+}
+{
+    "_id" : ObjectId("631c885561c5dad34464bc36"),
+    "sportName" : "tennis double",
+    "numPlayers" : "4",
+    "positions" : [
+        "p1",
+        "p2"
+    ]
+}
+{
+    "_id" : ObjectId("6332195595215f2646dc34c1"),
+    "sportName" : "Mali fudbal",
+    "numPlayers" : "10",
+    "positions" : [
+        "glk",
+        "def",
+        "mid",
+        "mid",
+        "att"
+    ]
+}

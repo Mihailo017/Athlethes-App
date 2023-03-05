@@ -1,0 +1,14 @@
+{
+    "_id" : ObjectId("63302fdf8c9a78fa7681d5f9"),
+    "placeName" : "Olimp sportski centar",
+    "sportName" : "tennis",
+    "date" : "2022-09-30T00:00:00.000Z",
+    "status" : "prijava",
+    "t1" : [
+
+    ],
+    "t2" : [
+
+    ],
+    "__v" : NumberInt(0)
+}

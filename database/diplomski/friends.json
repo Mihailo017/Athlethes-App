@@ -1,0 +1,36 @@
+{
+    "_id" : ObjectId("632f4f06ef7a2ec200fb987f"),
+    "reqSender" : "c@mail.com",
+    "reqReceiver" : "a@mail.com",
+    "status" : "friends"
+}
+{
+    "_id" : ObjectId("632f4f25ef7a2ec200fb988a"),
+    "reqSender" : "a@mail.com",
+    "reqReceiver" : "b@mail.com",
+    "status" : "friends"
+}
+{
+    "_id" : ObjectId("633203641e16f2c3ea0a7b26"),
+    "reqSender" : "a@mail.com",
+    "reqReceiver" : "b@mail.com",
+    "status" : "req"
+}
+{
+    "_id" : ObjectId("633204641e16f2c3ea0a7b43"),
+    "reqSender" : "a@mail.com",
+    "reqReceiver" : "q@mail",
+    "status" : "friends"
+}
+{
+    "_id" : ObjectId("6332046d1e16f2c3ea0a7b46"),
+    "reqSender" : "a@mail.com",
+    "reqReceiver" : "w@mail.com",
+    "status" : "friends"
+}
+{
+    "_id" : ObjectId("633204761e16f2c3ea0a7b49"),
+    "reqSender" : "a@mail.com",
+    "reqReceiver" : "e@mail.com",
+    "status" : "friends"
+}

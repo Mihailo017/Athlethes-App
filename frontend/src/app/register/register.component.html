@@ -1,0 +1,136 @@
+<mat-card>
+    <div class="mat-h1">Registracija korisnika</div>
+    <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Sportista">
+            <form>
+                <table>
+                    <tr>
+                        <mat-form-field>
+                            <td>
+                                <input required matInput placeholder="Email" type="text" name="email"
+                                    [(ngModel)]='email'>
+                            </td>
+                        </mat-form-field>
+                    </tr>
+                    <tr>
+                        <mat-form-field>
+                            <td>
+                                <input required matInput placeholder="Sifra" type="password" name="password"
+                                    [(ngModel)]='password'>
+                            </td>
+                        </mat-form-field>
+                    </tr>
+                    <tr>
+                        <mat-form-field>
+                            <td>
+                                <input required matInput placeholder="Potvrda sifre" type="password"
+                                    name="passwordCheck" [(ngModel)]='passwordCheck'>
+                            </td>
+                        </mat-form-field>
+                    </tr>
+                    <tr>
+                        <mat-form-field>
+                            <td>
+                                <input required matInput placeholder="Ime" type="text" name="firstName"
+                                    [(ngModel)]='firstName'>
+                            </td>
+                        </mat-form-field>
+                    </tr>
+                    <tr>
+                        <mat-form-field>
+                            <td>
+                                <input required matInput placeholder="Prezime" type="text" name="lastName"
+                                    [(ngModel)]='lastName'>
+                            </td>
+                        </mat-form-field>
+                    </tr>
+                    <tr>
+                        <mat-form-field>
+                            <td>
+                                <input required matInput placeholder="Grad" type="text" name="playerCity"
+                                    [(ngModel)]='playerCity'>
+                            </td>
+                        </mat-form-field>
+                    </tr>
+                    <tr>
+                        <mat-form-field>
+                            <td>
+                                <input required matInput placeholder="Adresa" type="text" name="playerAddress"
+                                    [(ngModel)]='playerAddress'>
+                            </td>
+                        </mat-form-field>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="dugme" mat-raised-button color="accent" (click)="registerPlayer()">
+                                Registruj se
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </mat-tab>
+        <mat-tab label="Sporstka ustanova">
+            <form>
+                <table>
+                    <tr>
+                        <mat-form-field>
+                            <td>
+                                <input required matInput placeholder="Email" type="text" name="email"
+                                    [(ngModel)]='email'>
+                            </td>
+                        </mat-form-field>
+                    </tr>
+                    <tr>
+                        <mat-form-field>
+                            <td>
+                                <input required matInput placeholder="Sifra" type="password" name="password"
+                                    [(ngModel)]='password'>
+                            </td>
+                        </mat-form-field>
+                    </tr>
+                    <tr>
+                        <mat-form-field>
+                            <td>
+                                <input required matInput placeholder="Potvrda sifre" type="password"
+                                    name="passwordCheck" [(ngModel)]='passwordCheck'>
+                            </td>
+                        </mat-form-field>
+                    </tr>
+                    <tr>
+                        <mat-form-field>
+                            <td>
+                                <input required matInput placeholder="Naziv" type="text" name="placeName"
+                                    [(ngModel)]='placeName'>
+                            </td>
+                        </mat-form-field>
+                    </tr>
+                    <tr>
+                        <mat-form-field>
+                            <td>
+                                <input required matInput placeholder="Grad" type="text" name="placeCity"
+                                    [(ngModel)]='placeCity'>
+                            </td>
+                        </mat-form-field>
+                    </tr>
+                    <tr>
+                        <mat-form-field>
+                            <td>
+                                <input required matInput placeholder="Adresa" type="text" name="placeAddress"
+                                    [(ngModel)]='placeAddress'>
+                            </td>
+                        </mat-form-field>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="dugme" mat-raised-button color="accent" (click)="registerPlace()">
+                                Registruj se
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </mat-tab>
+        <mat-tab label="Trener"> Content 3 </mat-tab>
+    </mat-tab-group>
+</mat-card>

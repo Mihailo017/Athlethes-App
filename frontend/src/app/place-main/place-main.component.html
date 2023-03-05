@@ -1,0 +1,139 @@
+<!-- <table>
+    <tr>
+        <td>
+            <a routerLink="/placeTournaments">Tournaments</a>
+        </td>
+    </tr>
+</table> -->
+
+<div>
+    <img id="profile" src="../../assets/trudbenik.jpg">
+    <!-- <h1>{{loggedIn.firstName}} {{loggedIn.lastName}}</h1> -->
+    <h1>Balon Trudbenik</h1>
+</div>
+
+<nav mat-tab-nav-bar>
+    <a mat-tab-link [href]="link" *ngFor="let link of links; let i=index" (click)="activeLink = link"
+        [active]="activeLink == link">
+        {{linkNames[i]}} </a>
+</nav>
+
+<mat-card *ngIf="firstLogin">
+    <!-- <div class="mat-h1">Upotpunite vas profil</div> -->
+    <div class="mat-h2">Unesite sportove za koje pruzate usluge</div>
+    <table>
+        <tr>
+            <td colspan="2">
+                <button class="dugme" mat-button (click)="openAddSportDialog()">Dodaj
+                    sport</button>
+            </td>
+        </tr>
+        <br>
+        <tr *ngIf="sportAdded">
+            <td>
+                <mat-accordion multi="true">
+                    <mat-expansion-panel>
+                        <mat-expansion-panel-header>
+                            <div class="mat-h1">Dodati sportovi</div>
+                        </mat-expansion-panel-header>
+                        <table id="tabela">
+                            <th>Redni broj</th>
+                            <th>Naziv sporta</th>
+                            <tr *ngFor="let s of addedSports; let i = index">
+                                <td style="text-align: center;">{{i+1}}</td>
+                                <td style="text-align: center;">{{s.sportName}}</td>
+                            </tr>
+                        </table>
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button class="dugme" mat-raised-button (click)="updateSports()">Potvrda</button>
+            </td>
+        </tr>
+    </table>
+</mat-card>
+
+<mat-card *ngIf="!firstLogin">
+    <mat-accordion multi="true">
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <div class="mat-h1">Moji sportovi</div>
+            </mat-expansion-panel-header>
+            <mat-card>
+                <table id="tabela">
+                    <th>Redni broj</th>
+                    <th>Naziv sporta</th>
+                    <tr *ngFor="let s of loggedIn.placeSports; let i = index">
+                        <td style="text-align: center;">{{i+1}}</td>
+                        <td style="text-align: center;">{{s.sportName}}</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr><button class="dugme" mat-button (click)="openAddSportDialog2()">Dodaj
+                            sport</button>
+                    </tr>
+                    <!-- <tr>
+                        <button class="dugme" mat-button (click)="openAddSportDialog3()">Azuriraj
+                            broj
+                            terena
+                        </button>
+                    </tr> -->
+                    <tr>
+                        <button class="dugme" mat-raised-button (click)="updateSports()">Potvrda</button>
+                    </tr>
+                </table>
+            </mat-card>
+
+            <!-- <mat-card>
+                <table>
+                    <tr><button class="dugme" mat-button (click)="openAddSportDialog2()">Dodaj
+                            sport</button>
+                    </tr>
+                    <tr>
+                        <button class="dugme" mat-button (click)="openAddSportDialog3()">Azuriraj
+                            broj
+                            terena
+                        </button>
+                    </tr>
+                    <tr>
+                        <button class="dugme" mat-raised-button (click)="updateSports()">Potvrda</button>
+                    </tr>
+                </table>
+            </mat-card> -->
+
+        </mat-expansion-panel>
+        <br>
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <div class="mat-h1">Moji turniri</div>
+            </mat-expansion-panel-header>
+            <mat-card>
+                <table id="tabela">
+                    <th>Redni broj</th>
+                    <th>Sport</th>
+                    <th>Datum pocetka</th>
+                    <th>Satus</th>
+                    <th>Akcija</th>
+                    <tr *ngFor="let t of myTournaments; let i = index">
+                        <td style="text-align: center;">{{i+1}}</td>
+                        <td style="text-align: center;">{{t.sport}}</td>
+                        <td style="text-align: center;">{{t.date}}</td>
+                        <td style="text-align: center;">{{t.status}}</td>
+                        <td *ngIf="t.unos">
+                            <button class="dugme" mat-raised-button (click)="results()">Unos rezultata</button>
+                        </td>
+                        <td *ngIf="!t.unos">
+                            <button class="dugme" mat-raised-button (click)="updateSports()">Pregled rezultata</button>
+                        </td>
+                    </tr>
+                </table>
+            </mat-card>
+        </mat-expansion-panel>
+    </mat-accordion>
+
+
+</mat-card>

@@ -1,0 +1,276 @@
+{
+    "_id" : ObjectId("632edb6a49db9d4557498431"),
+    "username" : "",
+    "email" : "a@mail.com",
+    "password" : "a1",
+    "firstName" : "Mihailo",
+    "lastName" : "Mladenovic",
+    "playerCity" : "Beograd",
+    "playerAddress" : "Veljka Dugosevica 15",
+    "favSports" : [
+        {
+            "_id" : "631c85cd61c5dad34464bc31",
+            "sportName" : "football 5x5",
+            "numPlayers" : "10",
+            "positions" : [
+                "glk",
+                "def",
+                "mid",
+                "mid",
+                "att"
+            ]
+        },
+        {
+            "_id" : "631c879961c5dad34464bc33",
+            "sportName" : "basketball 3x3",
+            "numPlayers" : "6",
+            "positions" : [
+                {
+                    "posName" : "G"
+                },
+                {
+                    "posName" : "F"
+                },
+                {
+                    "posName" : "C"
+                }
+            ]
+        }
+    ],
+    "favPlaces" : [
+        {
+            "_id" : "631ca78a4c69b66da5504362",
+            "email" : "aa@mail.com",
+            "password" : "a1",
+            "placeName" : "Olimp sportski centar",
+            "placeCity" : "Beograd",
+            "placeSports" : [
+                {
+                    "sportName" : "tennis",
+                    "numSlots" : NumberInt(3)
+                }
+            ],
+            "__v" : NumberInt(0)
+        },
+        {
+            "_id" : "631ca7d74c69b66da5504366",
+            "email" : "bb@mail.com",
+            "password" : "a1",
+            "placeName" : "Balon Enfild",
+            "placeCity" : "Beograd",
+            "placeSports" : [
+                {
+                    "sportName" : "football 5x5",
+                    "numSlots" : NumberInt(1)
+                }
+            ],
+            "__v" : NumberInt(0)
+        },
+        {
+            "_id" : "632dd8db9c6533c71bcddb10",
+            "email" : "dd@mail.com",
+            "password" : "a1",
+            "placeName" : "Balon Trudbenik",
+            "placeCity" : "Beograd",
+            "placeSports" : [
+                {
+                    "sportName" : "basketball 5x5",
+                    "numSlots" : NumberInt(1)
+                },
+                {
+                    "sportName" : "football 5x5",
+                    "numSlots" : NumberInt(3)
+                }
+            ],
+            "__v" : NumberInt(0)
+        }
+    ],
+    "favTimeslots" : [
+        "prepodne",
+        "uvece"
+    ]
+}
+{
+    "_id" : ObjectId("632f4e66ef7a2ec200fb986b"),
+    "username" : "",
+    "email" : "b@mail.com",
+    "password" : "a1",
+    "firstName" : "Avram",
+    "lastName" : "Stojilkovic",
+    "playerCity" : "Beograd",
+    "playerAddress" : "Tihomira Visnjevca 18",
+    "favSports" : [
+        {
+            "_id" : "631c85cd61c5dad34464bc31",
+            "sportName" : "football 5x5",
+            "numPlayers" : "10",
+            "positions" : [
+                "glk",
+                "def",
+                "mid",
+                "mid",
+                "att"
+            ]
+        },
+        {
+            "_id" : "631c879961c5dad34464bc33",
+            "sportName" : "basketball 3x3",
+            "numPlayers" : "6",
+            "positions" : [
+                {
+                    "posName" : "G"
+                },
+                {
+                    "posName" : "F"
+                },
+                {
+                    "posName" : "C"
+                }
+            ]
+        }
+    ],
+    "favPlaces" : [
+        {
+            "_id" : "631ca78a4c69b66da5504362",
+            "email" : "aa@mail.com",
+            "password" : "a1",
+            "placeName" : "Olimp sportski centar",
+            "placeCity" : "Beograd",
+            "placeSports" : [
+                {
+                    "sportName" : "tennis",
+                    "numSlots" : NumberInt(3)
+                }
+            ],
+            "__v" : NumberInt(0)
+        }
+    ],
+    "favTimeslots" : [
+        "predvece",
+        "uvece"
+    ]
+}
+{
+    "_id" : ObjectId("632f4e86ef7a2ec200fb9873"),
+    "username" : "",
+    "email" : "c@mail.com",
+    "password" : "a1",
+    "firstName" : "Aleksandar",
+    "lastName" : "Arsic",
+    "playerCity" : "Beograd",
+    "playerAddress" : "Tosin Bunar 143",
+    "favSports" : [
+        {
+            "_id" : "631c85cd61c5dad34464bc31",
+            "sportName" : "football 5x5",
+            "numPlayers" : "10",
+            "positions" : [
+                "glk",
+                "def",
+                "mid",
+                "mid",
+                "att"
+            ]
+        }
+    ],
+    "favPlaces" : [
+        {
+            "_id" : "631ca8454c69b66da550436a",
+            "email" : "cc@mail.com",
+            "password" : "a1",
+            "placeName" : "Omladinski stadion",
+            "placeCity" : "Beograd",
+            "placeSports" : [
+                {
+                    "sportName" : "football 5x5",
+                    "numSlots" : NumberInt(1)
+                },
+                {
+                    "sportName" : "football 11x11",
+                    "numSlots" : NumberInt(1)
+                }
+            ],
+            "__v" : NumberInt(0)
+        }
+    ],
+    "favTimeslots" : [
+        "prepodne",
+        "poslepodne"
+    ]
+}
+{
+    "_id" : ObjectId("6330481e9fea0ca96dc58671"),
+    "username" : "",
+    "email" : "v@mail.com",
+    "password" : "a1",
+    "firstName" : "Aleksandar",
+    "lastName" : "Simic",
+    "playerCity" : "Beograd",
+    "playerAddress" : "Tosin Bunar 143",
+    "favSports" : [
+
+    ],
+    "favPlaces" : [
+
+    ],
+    "favTimeslots" : [
+
+    ]
+}
+{
+    "_id" : ObjectId("6332041f1e16f2c3ea0a7b29"),
+    "username" : "",
+    "email" : "q@mail",
+    "password" : "a1",
+    "firstName" : "Uros",
+    "lastName" : "Damjanovic",
+    "playerCity" : "Beograd",
+    "playerAddress" : "bb",
+    "favSports" : [
+
+    ],
+    "favPlaces" : [
+
+    ],
+    "favTimeslots" : [
+
+    ]
+}
+{
+    "_id" : ObjectId("633204361e16f2c3ea0a7b2e"),
+    "username" : "",
+    "email" : "w@mail.com",
+    "password" : "a1",
+    "firstName" : "Milos",
+    "lastName" : "Ivkovic",
+    "playerCity" : "Beograd",
+    "playerAddress" : "bb",
+    "favSports" : [
+
+    ],
+    "favPlaces" : [
+
+    ],
+    "favTimeslots" : [
+
+    ]
+}
+{
+    "_id" : ObjectId("633204511e16f2c3ea0a7b33"),
+    "username" : "",
+    "email" : "e@mail.com",
+    "password" : "a1",
+    "firstName" : "Marko",
+    "lastName" : "Jovanovic",
+    "playerCity" : "Beograd",
+    "playerAddress" : "bb",
+    "favSports" : [
+
+    ],
+    "favPlaces" : [
+
+    ],
+    "favTimeslots" : [
+
+    ]
+}

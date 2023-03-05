@@ -1,0 +1,55 @@
+<h1 mat-dialog-title>Prijava termina</h1>
+
+<div mat-dialog-content *ngIf="data.timeslot.place">
+    <h1 mat-dialog-title>Rezervacija nije moguca! Termin nije slobodan</h1>
+</div>
+
+<div mat-dialog-content *ngIf="!data.timeslot.place">
+    <h3 mat-dialog-title>Pozovite vase prijatelje da upotpunite timove, potrebno je pozvati {{numPlayers - 1}}
+        prijatelja da
+        biste mogli da rezervisete termin
+    </h3>
+    <mat-form-field appearance="fill">
+        <mat-label>Pozovi prijatelje</mat-label>
+        <mat-select multiple placeholder="Prijatelji" name="friends" [(ngModel)]='data.invitedFriends'>
+            <mat-option *ngFor="let f of data.allFriends" [value]="f">
+                {{f.firstName}} {{f.lastName}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+    <button class="dugme" mat-button (click)="onNoClick()">Izlaz</button>
+    <button class="dugme" *ngIf="!data.timeslot.place" mat-button [mat-dialog-close]="data.invitedFriends"
+        cdkFocusInitial color="accent">Pozovi</button>
+</div>
+<!-- <h1 mat-dialog-title>Prijava na turnir</h1>
+
+<div mat-dialog-content *ngIf="!data.timeslot.place">
+    <h1 mat-dialog-title>Rezervacija nije moguca! Termin nije slobodan</h1>
+</div>
+
+<div mat-dialog-content *ngIf="data.timeslot.place">
+    <mat-form-field appearance="fill">
+        <input required matInput placeholder="Naziv tima" type="text">
+    </mat-form-field>
+    <h3 mat-dialog-title>Pozovite vase prijatelje da upotpunite vas tim, potrebno je pozvati 2
+        prijatelja da
+        biste mogli da prijavite ekipu za turnir
+    </h3>
+    <mat-form-field appearance="fill">
+        <mat-label>Pozovi prijatelje</mat-label>
+        <mat-select multiple placeholder="Prijatelji" name="friends" [(ngModel)]='data.invitedFriends'>
+            <mat-option *ngFor="let f of data.allFriends" [value]="f">
+                {{f.firstName}} {{f.lastName}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div mat-dialog-actions>
+    <button class="dugme" mat-button (click)="onNoClick()">Izlaz</button>
+    <button class="dugme" *ngIf="data.timeslot.place" mat-button [mat-dialog-close]="data.invitedFriends"
+        cdkFocusInitial color="accent">Pozovi</button>
+</div> -->
